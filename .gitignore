@@ -1,0 +1,8 @@
+# para ignorar o arquivo .htaccess
+.htaccess
+
+#ignorar a pasta "database"
+database/
+
+#ignorar arquivos .DS_Store do MacOS
+.DS_Store
