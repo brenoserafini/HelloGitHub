@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Pokédex</title>
-        <meta charset="utf-8">
+	 <head>
+		  <title>Pokédex</title>
+		  <meta charset="utf-8">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Pokédex">
-        <meta name="keywords" content="pokédex, pokémon">
-        <meta name="author" content="Breno Serafini">
+		  <meta name="description" content="Pokédex">
+		  <meta name="keywords" content="pokédex, pokémon">
+		  <meta name="author" content="Breno Serafini">
 				<!-- Bootstrap minified CSS -->
 				<link href="./resources/css/bootstrap.min.css" rel="stylesheet">
 				<!-- Fontawesome minified CSS -->
@@ -16,8 +16,8 @@
 				<!-- Bootstrap Bundle JavaScript -->
 				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/fontawesome.min.js" integrity="sha512-5qbIAL4qJ/FSsWfIq5Pd0qbqoZpk5NcUVeAAREV2Li4EKzyJDEGlADHhHOSSCw0tHP7z3Q4hNHJXa81P92borQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    </head>
-    <body>
+	 </head>
+	 <body>
 
 		<div class="container h-100">
 			<a href="https://github.com/brenoserafini/HelloGitHub/" target="_blank"><span class="githubBadge"><i class="fa-brands fa-github"></i></span></a>
@@ -62,7 +62,7 @@
 				<input type="text" class="form-control" aria-label="Sizing example input" size="35" aria-describedby="inputGroup-sizing-lg" placeholder="just type a pokémon name...">
 			</div> -->
 		</body>
-    <footer>
+	 <footer>
 			<!-- reservado para o footer -->
 		</footer>
 </html>
