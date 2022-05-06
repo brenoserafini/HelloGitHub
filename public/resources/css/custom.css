@@ -1,0 +1,104 @@
+/* Import Google Fonts: Playfair Display & Source Sans Pro */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+/* 
+	Fontes importadas e disponíveis para o projeto:
+	font-family: 'Playfair Display', serif;
+	font-family: 'Source Sans Pro', sans-serif; 
+*/
+
+:root {
+	--dsColor-light-fire: rgb(255, 207, 207);
+}
+
+html * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+a[x-apple-data-detectors] {
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	line-height: inherit !important;
+}
+a[href^="tel"]{
+	color:inherit;
+	text-decoration:none;
+}
+
+body {
+	background: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+body p { font-size: 1.1rem; }
+body ul { padding-left: 20px; }
+body ul li { font-size: 1.1rem; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+
+.bg-pokemon-fire { background: var(--dsColor-light-fire); }
+
+.githubBadge {
+	position: fixed;
+	left: 15px;
+	bottom: 15px;
+	color: #fff;
+	background: #aaa;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 7px;
+	border-radius: 50%;
+}
+.gengar-fixed {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	width: 60px;
+}
+
+.pokemonCardContainer {
+	background: #fff;
+	border-radius: .5em;
+	box-shadow: 0 0 3em rgba(0,0,0,.15);
+	width: fit-content;
+	overflow: hidden;
+	max-width: 350px;
+}
+.pokemonContainerCover {
+	padding: 2em 2em;
+}
+.pokemonCover {
+	position: relative;
+}
+.pokemonName {
+	position: relative;
+	z-index: 2;
+}
+.pokemonCover .shape:before {
+	content: "";
+	position: absolute;
+	background: rgba(255,255,255, .7);
+	box-shadow: 0em 0em 5em #fff;
+	width: 70%;
+	z-index: 1;
+	margin: 0 auto;
+	left: 15%;
+	border-radius: 50%;
+	aspect-ratio: 1/1;
+}
+.pokemonCover img {
+	position: relative;
+	z-index: 2;
+}
+.badge-pokemonNumber {
+	background: #fff;
+	padding: .4em 1.8em;
+	color: #333;
+}
+
+.pokemonContainerInfo {
+	padding: 2em 2em;
+	padding-top: 0em;
+}
