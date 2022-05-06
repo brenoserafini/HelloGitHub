@@ -8,7 +8,6 @@
       <meta name="description" content="Pokédex">
       <meta name="keywords" content="pokédex, pokémon">
       <meta name="author" content="Breno Serafini">
-
       <!-- Bootstrap minified CSS -->
       <link href="./resources/css/bootstrap.min.css" rel="stylesheet">
       <!-- Fontawesome minified CSS -->
@@ -29,6 +28,7 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="pokemonCardContainer">
+                     <button id="btnSearch" class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
                      <div class="pokemonContainerCover bg-pokemon-fire">
                         <div class="pokemonCover text-center">
                            <h2 class="pokemonName mb-4">Charmeleon</h2>
@@ -63,7 +63,11 @@
       </div>
       <!-- <div class="input-group input-group-lg"> <input type="text" class="form-control" aria-label="Sizing example input" size="35" aria-describedby="inputGroup-sizing-lg" placeholder="just type a pokémon name..."> </div> -->
    </body>
+
    <footer>
       <!-- reservado para o footer -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="./resources/js/custom.js"></script>
    </footer>
+
 </html>
