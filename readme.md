@@ -1,11 +1,12 @@
 Just a repository to discover GitHub (or Pokémons)! 🦭
 
-Após alguns bons anos colocando trabalhando com Git no Bitbucket, resolvi finalmente colocar um primeiro repositório no GitHub para explorar seus recursos e comunidade. ✨
+Após alguns bons anos trabalhando com Git no Bitbucket, resolvi finalmente colocar um primeiro repositório no GitHub para explorar seus recursos e comunidade. ✨
 
 ---
 
 ### O que você encontrará aqui?
-Uma aplicaçãozinha para descobrir Pokémons e alguns branches aos moldes do fluxo de trabalho do GitFlow.
+Uma aplicaçãozinha para descobrir Pokémons e alguns branches aos moldes do fluxo de trabalho do GitFlow. <br>
+`master:` [https://brenoserafini.com/pokemons/](https://brenoserafini.com/pokemons/) 👻
 
 ### O que utilizei:
 Html / CSS / JS / Ajax / PHP / Bootstrap / PokéAPI <br>
