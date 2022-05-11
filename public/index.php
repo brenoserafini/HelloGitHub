@@ -29,7 +29,7 @@
          <a href="https://github.com/brenoserafini/HelloGitHub/" target="_blank">
             <span class="githubBadge" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="brenoserafini/HelloGitHub/"><i class="fa-brands fa-github"></i></span>
          </a>
-          <!-- Search Gengar -->
+         <!-- Search Gengar -->
          <img id="btnSearchGengar" src="./assets/img/gengar.png" class="gengar-fixed cursor-pointer" alt="">
          <div class="d-flex justify-content-center align-items-center vh-100">
             <div class="row rowBlockResponsive bg-pokemon-fyre">
@@ -38,11 +38,11 @@
                      <!-- Loading para o pokemonCardContainer -->
                      <?php renderLoadingContainerCard(); ?>
                      <!-- Form para digitar o nome ou número do pokémon -->
-                     <!-- <form> -->
+                     <div class="formHeader">
                         <input id="baseUrlInput" type="hidden" value="<?php echo $baseUrl; ?>">
                         <input id="pokemonNameOrNumberInput" type="text" class="form-control pokemonNameOrNumberInput" spellcheck="false"> 
                         <button id="btnSearch" class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                     <!-- </form> -->
+                     </div>
                      <!-- Elemento no qual o será renderizado o card do pokémon -->
                      <div id="ajaxPokemonCardResult"></div>
                   </div>
