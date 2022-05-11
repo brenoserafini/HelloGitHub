@@ -12,7 +12,7 @@
          
    function renderPokemonCard() {
 
-      $requestUrl = "https://pokeapi.co/api/v2/pokemon/" . $_POST['pokemonNameOrNumberInput'];
+      $requestUrl = "https://pokeapi.co/api/v2/pokemon/" . strtolower($_POST['pokemonNameOrNumberInput']);
       $ch = curl_init($requestUrl);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
       curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));

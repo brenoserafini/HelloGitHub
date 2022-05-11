@@ -33,6 +33,11 @@ var typed = new Typed('#pokemonNameOrNumberInput', {
 $('#btnSearch').click(function() {
    ajaxPokemonSearch();
 });
+$('#pokemonNameOrNumberInput').keydown(function (e){
+   if(e.keyCode == 13){
+      ajaxPokemonSearch();
+   }
+})
 // chama função ajaxPokemonSearch("gengar") quando o elemento #btnSearchGengar é clicado
 $('#btnSearchGengar').click(function() {
    ajaxPokemonSearch("gengar");
@@ -51,6 +56,7 @@ $('#btnSearchGengar').click(function() {
 var delayInMilliseconds = 800;
 // Função Ajax que realiza a requição GET na API PokéAPI
 function ajaxPokemonSearch(pokemonNameOrNumber) {
+   var baseUrl = document.getElementById('baseUrlInput').value;
    if  (pokemonNameOrNumber) {
       var pokemonNameOrNumberInput = pokemonNameOrNumber;
    } else {
@@ -59,7 +65,7 @@ function ajaxPokemonSearch(pokemonNameOrNumber) {
    $("#loadingContainerCard").show();
    $.ajax({
       type: "POST",
-      url: "../../ajax.php",
+      url: baseUrl + "ajax.php",
       data: { action: "renderPokemonCard", pokemonNameOrNumberInput: pokemonNameOrNumberInput}
    }).done(function(msg) {
       $("#ajaxPokemonCardResult").html(msg);
@@ -71,11 +77,12 @@ function ajaxPokemonSearch(pokemonNameOrNumber) {
 }
 // Função Ajax que realiza a requição GET na API PokéAPI (com um valor aleatório, referente ao número – que pode ir de 1 à 898 – do pokémon)
 function ajaxPokemonRandom() {
+   var baseUrl = document.getElementById('baseUrlInput').value;
    var pokemonNameOrNumberInput = getRandomInt(1,898);
    $("#loadingPage").show();
    $.ajax({
       type: "POST",
-      url: "../../ajax.php",
+      url: baseUrl + "ajax.php",
       data: { action: "renderPokemonCard", pokemonNameOrNumberInput: pokemonNameOrNumberInput}
    }).done(function(msg) {
       $("#ajaxPokemonCardResult").html(msg);
