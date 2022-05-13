@@ -92,3 +92,7 @@ function ajaxPokemonRandom() {
       setTimeout(function() { $("#loadingPage").hide(); }, delayInMilliseconds);
    });
 }
+
+function scrollSmoothToBottom() {
+   setTimeout(function() { window.scrollTo(0,document.body.scrollHeight); }, 250);
+}
