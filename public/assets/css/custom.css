@@ -122,7 +122,7 @@ hr {
    font-weight: 600;
 }
 .pokemonImageContainer {
-   width: 260px !important;
+   width: 100% !important;
    aspect-ratio: 1/1;
 }
 .pokemonCover .shape:before {
@@ -146,14 +146,29 @@ hr {
    padding: .4em 1em;
    color: #333;
    font-size: .8em;
+   right: -15px;
+   position: absolute;
+   z-index: 5;
 }
 .pokemonType {
    letter-spacing: .05em;
+}
+.badgeType {
+   border-radius: 20px;
+   padding: .2em .4em;
+   width: fit-content;
+   background: rgba(255,255,255,.8);
+   padding: .4em 1em;
+   color: #333;
+   font-size: .9em;
 }
 
 .pokemonContainerInfo {
    padding: 2em 2em;
    padding-top: 0em;
+}
+.formHeader {
+   position: relative;
 }
 .pokemonNameOrNumberInput, .pokemonNameOrNumberInput:focus {
    background: rgba(255,255,255,.1) !important;
@@ -201,6 +216,34 @@ hr {
    margin-left: 10%;
 }
 
+/* SWIPER */
+.pokemonEvolutionChaisSwiper .swiper-wrapper {
+   margin-left: 10%;
+}
+.pokemonEvolutionChaisSwiper .swiper-slide {
+    max-width: 80%;
+    margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+   font-size: 22px;
+   font-weight: bold;
+   color: rgba(0,0,0,.7);
+   background: rgba(255,255,255,.6);
+   -webkit-backdrop-filter: blur(10px);
+   backdrop-filter: blur(10px);
+   padding: 2em 1em;
+   padding-bottom: 1em;
+}
+.pokemonEvolutionChaisSwiper .swiper-pagination {
+   padding-bottom: 10px;
+}
+.pokemonEvolutionChaisSwiper .swiper-pagination-bullet {
+   background: rgba(0,0,0,.8);
+}
+
+/* RESPONSIVIDADE */
 @media (max-width: 576px) /*, (max-height: 600px) */ {
    .pokemonCardContainer  {
       padding-top: .5em;
@@ -254,6 +297,11 @@ hr {
       scrollbar-width: none;  /* Firefox */
    }
 }
+@media (max-height: 500px) {
+   .alignItensInitialResponsive {
+      align-items: unset !important;
+   }
+}
 
 
 /* LOADING */
@@ -272,7 +320,6 @@ hr {
 .dot-align {
    margin: 0 auto;
 }
-
 #loadingContainerCard {
    background: rgba(255,255,255,.95);
    position: absolute;
