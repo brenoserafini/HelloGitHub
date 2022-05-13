@@ -16,7 +16,7 @@ Html / CSS / JS / Ajax / PHP / Bootstrap / PokéAPI <br>
 Este repositório também inclui um docker-compose.yml pra facilitar a execução do projeto no seu ambiente de desenvolvimento. É clonar e mandar um `sudo docker-compose up -d`(na raiz do projeto). 😜
 
 ### Próximas etapas
-Ainda a muito o que se fazer e melhorar. Como eu disse, o repositório é apenas um hello-world para o GitHub. A medida do possível, vou mexendo nele.
+Ainda há muito o que se fazer e melhorar. Como eu disse, o repositório é apenas um hello-world para o GitHub. A medida do possível, vou mexendo nele.
 
 Basic Markdown Syntax _(para consultas futuras)_ <br>
 `https://www.markdownguide.org/cheat-sheet/`
